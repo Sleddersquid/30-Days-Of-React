@@ -5,7 +5,7 @@
 const arr1 = Array();
 const arr2 = new Array();
 // Using squarebrackets. This is the recommended way to create an empty list
-const arr3 = [];
+const arr3 = [1, 2, 3, 4];
 
 // Creating arrays with different conten inside
 const numbers = [0, 3.14, 9.81, 37, 98.6, 100] // array of numbers
@@ -34,3 +34,15 @@ console.log('Number of web technologies:', webTechs.length)
 
 console.log('Countries:', countries)
 console.log('Number of countries:', countries.length)
+
+// Arrays kan also have different items, data types and even arrays
+const manytypesArray = [
+    'Asabeneh',
+    250,
+    true,
+    { country: 'Finland', city: 'Helsinki' },
+    { skills: ['HTML', 'CSS', 'JS', 'React', 'Python'] },
+  ] // arr containing different data types
+  console.log(manytypesArray[3]); // { country: 'Finland', city: 'Helsinki' }
+  console.log(manytypesArray[3]["country"]); // Finland
+
