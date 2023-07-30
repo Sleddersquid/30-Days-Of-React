@@ -6,8 +6,10 @@ console.log(charsInJavascript);
 
 // split kan also be used to split when a spesific character is present in the string
 let companiesString = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
-// This splits the string
-const companies = companiesString.split(',');
+// This splits the string when there is a semicolon and a space.
+const companies = companiesString.split(', ');
 console.log(companies) // ["Facebook", " Google", " Microsoft", " Apple", " IBM", " Oracle", " Amazon"]
 
-let text = "I love working with JavaScript, CSS and HTML. But "
+let text = "I love working with JavaScript, CSS and HTML. But React is very interesting";
+const SplitedText = text.split(" ");
+console.log(SplitedText);
