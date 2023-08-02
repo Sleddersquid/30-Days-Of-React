@@ -95,8 +95,21 @@ console.log(arr); // []
 const eightEmptyValues = Array(8); // creates an array with 8 empty values
 console.log(eightEmptyValues); // [ <8 empty items> ]
 
-// NEW SECTION: Creating static values with fil
+// NEW SECTION: Creating static values with fill
+// Fill can be used to fill an empty array with a char/string/number
+const eightXvalues = Array(10).fill("X"); // Array with 10 elements
+console.log(eightXvalues); // ['X', 'X','X','X','X','X','X','X', 'X', 'X']
 
+const eight0Values = Array(8).fill(0);
+console.log(eight0Values); // [0, 0, 0, 0, 0, 0, 0, 0]
 
+const four4Values = Array(4).fill(4);
+console.log(four4Values);
 
+// NEW SECTION: Concatenating array using concat
 
+const firstList = [1, 2, 3];
+const secondList = [4, 5, 6];
+const thirdList = firstList.concat(secondList);
+
+console.log(thirdList);
