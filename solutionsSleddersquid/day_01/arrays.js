@@ -9,7 +9,7 @@ const arr3 = [1, 2, 3, 4];
 
 // NEW SECTION: Creating arrays with different conten inside
 const numbers = [0, 3.14, 9.81, 37, 98.6, 100] // array of numbers
-const fruits = ['banana', 'orange', 'mango', 'lemon'] // array of strings, fruits
+const fruits1 = ['banana', 'orange', 'mango', 'lemon'] // array of strings, fruits1
 const vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot'] // array of strings, vegetables
 const animalProducts = ['milk', 'meat', 'butter', 'yoghurt'] // array of strings, products
 const webTechs = ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'MongDB'] // array of web technologies
@@ -20,8 +20,8 @@ const countries = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland'] // array
 console.log('Numbers:', numbers)
 console.log('Number of numbers:', numbers.length)
 
-console.log('Fruits:', fruits)
-console.log('Number of fruits:', fruits.length)
+console.log('Fruits1:', fruits1)
+console.log('Number of fruits1:', fruits1.length)
 
 console.log('Vegetables:', vegetables)
 console.log('Number of vegetables:', vegetables.length)
@@ -51,19 +51,19 @@ console.log(manytypesArray[3]["country"]); // Finland
 
 
 // NEW SECTION: Accessing array items using index
-// const fruits = ['banana', 'orange', 'mango', 'lemon']
-let firstFruit = fruits[0] // we are accessing the first item using its index
+// const fruits1 = ['banana', 'orange', 'mango', 'lemon']
+let firstFruit = fruits1[0] // we are accessing the first item using its index
 console.log(firstFruit) // banana
 
-secondFruit = fruits[1]
+secondFruit = fruits1[1]
 console.log(secondFruit) // orange
 
-let lastFruit = fruits[3]
+let lastFruit = fruits1[3]
 console.log(lastFruit) // lemon
 // Last index can be calculated as follows
 
-let lastIndex = fruits.length - 1
-lastFruit = fruits[lastIndex]
+let lastIndex = fruits1.length - 1
+lastFruit = fruits1[lastIndex]
 console.log(lastFruit) // lemon
 
 // List of web technologies
@@ -107,9 +107,29 @@ const four4Values = Array(4).fill(4);
 console.log(four4Values);
 
 // NEW SECTION: Concatenating array using concat
-
+// concat: To concatenate two arrays. Function used on the array you want to concat on
 const firstList = [1, 2, 3];
 const secondList = [4, 5, 6];
 const thirdList = firstList.concat(secondList);
 
 console.log(thirdList);
+
+const fruits2 = ["Banana", "Orange", "Mango", "Lemon"];
+const vegetables2 = ["Tomato", "Potato", "Cabbage", "Onion", "Carrot"];
+const fruitsAndVegetables = fruits2.concat(vegetables2);
+
+console.log(fruitsAndVegetables);
+
+// NEW SECTION: Getting length of an array
+const numbers3 = [1, 2, 3, 4, 5];
+console.log(numbers3.length); // Gives 5. array numbers3 has a length of 5
+
+// NEW SECTION: Getting index of an element in an array
+// indexOf:To check if an item exist in an array. If it exists it returns the index else it returns -1.
+const numbers4 = [1, 2, 3, 4, 5];
+
+console.log(numbers4.indexOf(5)); // Returns 4
+console.log(numbers4.indexOf(0)); // Returns -1, because element isn't present in array
+console.log(numbers4.indexOf(1)); // Returns 0
+console.log(numbers4.indexOf(6)); // Returns -1
+
